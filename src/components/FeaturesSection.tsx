@@ -6,24 +6,24 @@ import guardianStrong from "@/assets/guardian-strong.png";
 const features = [
   {
     image: guardianWeak,
-    title: "Beginner Shield",
-    description: "Short & simple passwords are easy to crack. Your guardian is just starting out!",
+    title: "Genin (Academy Student)",
+    description: "Short & simple passwords are easy to crack. Your ninja is just starting at the academy!",
     color: "bg-strength-weak/15 border-strength-weak/30",
-    emoji: "😟",
+    emoji: "📜",
   },
   {
     image: guardianMedium,
-    title: "Rising Warrior",
-    description: "Mix letters and numbers — your guardian gets stronger armor!",
+    title: "Chūnin (Rising Ninja)",
+    description: "Mix letters and numbers — your ninja earns the chūnin vest and stronger jutsu!",
     color: "bg-strength-medium/15 border-strength-medium/30",
-    emoji: "💪",
+    emoji: "🔥",
   },
   {
     image: guardianStrong,
-    title: "Legendary Hero",
-    description: "Symbols + uppercase + length = UNSTOPPABLE! Full golden armor unlocked!",
+    title: "Hokage (Legend!)",
+    description: "Symbols + uppercase + length = UNSTOPPABLE! You've unlocked Hokage-level power!",
     color: "bg-strength-strong/15 border-strength-strong/30",
-    emoji: "🏆",
+    emoji: "⚡",
   },
 ];
 
@@ -31,10 +31,10 @@ export default function FeaturesSection() {
   return (
     <section className="gradient-features px-5 py-12">
       <h2 className="text-center text-2xl sm:text-3xl font-extrabold text-foreground">
-        ⚔️ Guardian Evolution
+        🍥 Ninja Evolution
       </h2>
       <p className="mt-2 text-center text-sm text-muted-foreground">
-        Stronger passwords = Stronger guardian!
+        Stronger passwords = Higher ninja rank!
       </p>
 
       <div className="mt-8 flex flex-col gap-5 max-w-lg mx-auto">

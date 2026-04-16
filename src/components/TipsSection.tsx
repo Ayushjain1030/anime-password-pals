@@ -6,33 +6,33 @@ import { Lock, Hash, Sparkles, BookOpen, KeyRound } from "lucide-react";
 const tips = [
   {
     icon: Lock,
-    title: "Length is Power",
-    description: "Use at least 8 characters. Longer passwords are harder to crack!",
-    bgClass: "bg-kawaii-pink/10",
+    title: "Length is Chakra",
+    description: "Use at least 8 characters. Longer passwords = more powerful jutsu!",
+    bgClass: "bg-kawaii-orange/10",
   },
   {
     icon: Hash,
-    title: "Mix It Up",
-    description: "Combine uppercase, lowercase, numbers, and symbols!",
+    title: "Mix Your Jutsu",
+    description: "Combine uppercase, lowercase, numbers, and symbols for max power!",
     bgClass: "bg-kawaii-blue/10",
   },
   {
     icon: Sparkles,
-    title: "Be Unique",
-    description: "Never use the same password for different accounts!",
+    title: "Unique Scrolls",
+    description: "Never use the same password for different accounts — each scroll is sacred!",
     bgClass: "bg-kawaii-yellow/10",
   },
   {
     icon: BookOpen,
-    title: "Use a Phrase",
-    description: "Try a fun sentence like 'My3CatsLove!Pizza' — easy to remember!",
+    title: "Secret Phrase Jutsu",
+    description: "Try a fun sentence like 'My3CatsLove!Ramen' — easy to remember, hard to crack!",
     bgClass: "bg-kawaii-green/10",
   },
   {
     icon: KeyRound,
-    title: "Keep It Secret",
-    description: "Never share your password with strangers, only trusted adults!",
-    bgClass: "bg-kawaii-purple/10",
+    title: "Guard Your Scroll",
+    description: "Never share your password with strangers — only trusted senseis!",
+    bgClass: "bg-kawaii-blue/10",
   },
 ];
 
@@ -44,21 +44,20 @@ export default function TipsSection() {
       <div className="flex items-center justify-center gap-3 mb-2">
         <img
           src={mascotTips}
-          alt="Tips mascot"
+          alt="Sensei mascot"
           width={512}
           height={512}
           loading="lazy"
           className="w-12 h-12 object-contain"
         />
         <h2 className="text-2xl sm:text-3xl font-extrabold text-foreground">
-          📚 Pro Tips
+          📜 Sensei's Tips
         </h2>
       </div>
       <p className="text-center text-sm text-muted-foreground mb-6">
-        Swipe for password wisdom! →
+        Swipe for ninja wisdom! →
       </p>
 
-      {/* Swipeable horizontal cards */}
       <div
         ref={scrollRef}
         className="flex gap-4 overflow-x-auto snap-x snap-mandatory pb-4 -mx-5 px-5 scrollbar-hide"
@@ -86,13 +85,9 @@ export default function TipsSection() {
         ))}
       </div>
 
-      {/* Dot indicators */}
       <div className="flex justify-center gap-1.5 mt-4">
         {tips.map((_, i) => (
-          <div
-            key={i}
-            className="w-2 h-2 rounded-full bg-primary/30"
-          />
+          <div key={i} className="w-2 h-2 rounded-full bg-primary/30" />
         ))}
       </div>
     </section>
