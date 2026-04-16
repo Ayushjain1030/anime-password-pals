@@ -1,6 +1,6 @@
 import { motion } from "framer-motion";
 import heroGuardian from "@/assets/hero-guardian.png";
-import { Shield } from "lucide-react";
+import { Swords } from "lucide-react";
 
 export default function HeroSection() {
   return (
@@ -13,7 +13,7 @@ export default function HeroSection() {
       >
         <img
           src={heroGuardian}
-          alt="Password Guardian - your cute anime protector"
+          alt="Ninja Password Guardian"
           width={512}
           height={512}
           className="w-full h-auto drop-shadow-lg"
@@ -26,19 +26,19 @@ export default function HeroSection() {
         transition={{ delay: 0.3, duration: 0.5 }}
       >
         <div className="mt-4 flex items-center justify-center gap-2">
-          <Shield className="h-5 w-5 text-primary" />
+          <Swords className="h-5 w-5 text-primary" />
           <span className="text-sm font-semibold tracking-wider uppercase text-muted-foreground">
             Password Guardian
           </span>
-          <Shield className="h-5 w-5 text-primary" />
+          <Swords className="h-5 w-5 text-primary" />
         </div>
 
         <h1 className="mt-3 text-3xl sm:text-4xl md:text-5xl font-extrabold leading-tight text-gradient-hero">
-          Protect Your Secrets Like a Hero!
+          Protect Your Secrets Like a Ninja!
         </h1>
 
         <p className="mt-3 text-base sm:text-lg text-muted-foreground max-w-md mx-auto leading-relaxed">
-          Learn to create super-strong passwords and become the ultimate digital guardian! 🛡️✨
+          Master the art of strong passwords and become the ultimate Hokage of cybersecurity! 🍥✨
         </p>
       </motion.div>
 
@@ -49,7 +49,7 @@ export default function HeroSection() {
         className="mt-6"
       >
         <button className="btn-glow inline-flex items-center gap-2 rounded-2xl bg-primary px-8 py-4 text-lg font-bold text-primary-foreground">
-          <span>⚔️</span> Start Your Adventure
+          <span>🍥</span> Begin Your Ninja Training
         </button>
       </motion.div>
     </section>

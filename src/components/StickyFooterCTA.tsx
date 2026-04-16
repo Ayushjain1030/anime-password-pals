@@ -14,7 +14,7 @@ export default function StickyFooterCTA() {
     >
       <button className="btn-glow w-full flex items-center justify-center gap-2 rounded-2xl bg-primary px-6 py-4 text-lg font-bold text-primary-foreground max-w-md mx-auto">
         <Sparkles className="w-5 h-5" />
-        Start Your Journey
+        Start Your Ninja Journey
       </button>
     </motion.div>
   );

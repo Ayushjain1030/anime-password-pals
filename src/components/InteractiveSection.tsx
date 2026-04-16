@@ -13,9 +13,9 @@ function getStrength(password: string) {
   if (/[0-9]/.test(password)) score++;
   if (/[^A-Za-z0-9]/.test(password)) score++;
 
-  if (score <= 1) return { level: "weak", label: "Beginner Shield", image: guardianWeak, color: "var(--strength-weak)", percent: 25, feedback: "Too easy to guess! Add more characters 😟" };
-  if (score <= 3) return { level: "medium", label: "Rising Warrior", image: guardianMedium, color: "var(--strength-medium)", percent: 60, feedback: "Getting stronger! Try adding symbols 💪" };
-  return { level: "strong", label: "Legendary Hero!", image: guardianStrong, color: "var(--strength-strong)", percent: 100, feedback: "AMAZING! Unbreakable password! 🏆✨" };
+  if (score <= 1) return { level: "weak", label: "Genin Level", image: guardianWeak, color: "var(--strength-weak)", percent: 25, feedback: "Too easy to crack! A real ninja needs more chakra! 📜" };
+  if (score <= 3) return { level: "medium", label: "Chūnin Level", image: guardianMedium, color: "var(--strength-medium)", percent: 60, feedback: "Your jutsu is getting stronger! Add symbols! 🔥" };
+  return { level: "strong", label: "Hokage Level!", image: guardianStrong, color: "var(--strength-strong)", percent: 100, feedback: "LEGENDARY! You've mastered the Shadow Password Jutsu! ⚡✨" };
 }
 
 export default function InteractiveSection() {
@@ -26,14 +26,13 @@ export default function InteractiveSection() {
   return (
     <section className="gradient-interactive px-5 py-12">
       <h2 className="text-center text-2xl sm:text-3xl font-extrabold text-foreground">
-        🧠 Test Your Password!
+        🔥 Test Your Jutsu!
       </h2>
       <p className="mt-2 text-center text-sm text-muted-foreground">
-        Type a password and watch your guardian evolve!
+        Type a password and watch your ninja rank up!
       </p>
 
       <div className="mt-8 max-w-md mx-auto">
-        {/* Character display */}
         <div className="flex justify-center mb-6">
           <AnimatePresence mode="wait">
             <motion.div
@@ -55,13 +54,12 @@ export default function InteractiveSection() {
           </AnimatePresence>
         </div>
 
-        {/* Password input */}
         <div className="relative">
           <input
             type={showPassword ? "text" : "password"}
             value={password}
             onChange={(e) => setPassword(e.target.value)}
-            placeholder="Type your secret password..."
+            placeholder="Enter your secret jutsu..."
             className="w-full rounded-2xl border-2 border-border bg-card px-5 py-4 pr-14 text-lg font-medium text-foreground placeholder:text-muted-foreground/60 outline-none transition-all focus:border-primary focus:ring-4 focus:ring-primary/20"
           />
           <button
@@ -74,7 +72,6 @@ export default function InteractiveSection() {
           </button>
         </div>
 
-        {/* Strength meter */}
         {password.length > 0 && (
           <motion.div
             initial={{ opacity: 0, y: 10 }}
@@ -86,7 +83,7 @@ export default function InteractiveSection() {
                 {strength.label}
               </span>
               <span className="text-xs text-muted-foreground">
-                {strength.percent}%
+                {strength.percent}% Chakra
               </span>
             </div>
             <div className="h-4 w-full rounded-full bg-muted overflow-hidden">
