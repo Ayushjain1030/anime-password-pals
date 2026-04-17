@@ -33,6 +33,12 @@ export const Route = createRootRoute({
       { name: "description", content: "A fun anime-themed app teaching kids to create strong passwords" },
       { property: "og:type", content: "website" },
       { name: "twitter:card", content: "summary" },
+      { property: "og:title", content: "Password Guardian — Learn Passwords Like a Hero!" },
+      { name: "twitter:title", content: "Password Guardian — Learn Passwords Like a Hero!" },
+      { property: "og:description", content: "A fun anime-themed app teaching kids to create strong passwords" },
+      { name: "twitter:description", content: "A fun anime-themed app teaching kids to create strong passwords" },
+      { property: "og:image", content: "https://pub-bb2e103a32db4e198524a2e9ed8f35b4.r2.dev/97a74be2-04ce-4593-8044-3a71942df5e9/id-preview-1c68570a--0c6ff171-f43c-46be-940d-c52e20ded51b.lovable.app-1776398761134.png" },
+      { name: "twitter:image", content: "https://pub-bb2e103a32db4e198524a2e9ed8f35b4.r2.dev/97a74be2-04ce-4593-8044-3a71942df5e9/id-preview-1c68570a--0c6ff171-f43c-46be-940d-c52e20ded51b.lovable.app-1776398761134.png" },
     ],
     links: [
       { rel: "preconnect", href: "https://fonts.googleapis.com" },
