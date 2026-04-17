@@ -1,8 +1,12 @@
+import { useState } from "react";
 import { motion } from "framer-motion";
 import heroGuardian from "@/assets/hero-guardian.png";
 import { Swords } from "lucide-react";
+import NinjaJourneyModal from "./NinjaJourneyModal";
 
 export default function HeroSection() {
+  const [open, setOpen] = useState(false);
+
   return (
     <section className="gradient-hero px-5 pt-12 pb-10 text-center">
       <motion.div
@@ -48,10 +52,15 @@ export default function HeroSection() {
         transition={{ delay: 0.5, duration: 0.5 }}
         className="mt-6"
       >
-        <button className="btn-glow inline-flex items-center gap-2 rounded-2xl bg-primary px-8 py-4 text-lg font-bold text-primary-foreground">
+        <button
+          onClick={() => setOpen(true)}
+          className="btn-glow inline-flex items-center gap-2 rounded-2xl bg-primary px-8 py-4 text-lg font-bold text-primary-foreground"
+        >
           <span>🍥</span> Begin Your Ninja Training
         </button>
       </motion.div>
+
+      <NinjaJourneyModal open={open} onClose={() => setOpen(false)} />
     </section>
   );
 }
