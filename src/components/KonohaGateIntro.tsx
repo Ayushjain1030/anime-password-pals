@@ -161,23 +161,16 @@ export default function KonohaGateIntro() {
             />
           )}
 
-          {/* Centered button — fades out when opening */}
+          {/* Bottom button — fades out when opening */}
           <AnimatePresence>
             {!opening && (
               <motion.div
-                className="absolute inset-0 flex flex-col items-center justify-center z-10"
-                initial={{ opacity: 0, y: 10 }}
+                className="absolute inset-x-0 bottom-10 sm:bottom-16 flex justify-center z-10"
+                initial={{ opacity: 1, y: 0 }}
                 animate={{ opacity: 1, y: 0 }}
-                exit={{ opacity: 0, scale: 1.2 }}
-                transition={{ duration: 0.5, delay: 0.2 }}
+                exit={{ opacity: 0, scale: 1.1 }}
+                transition={{ duration: 0.3 }}
               >
-                <motion.div
-                  className="mb-4 text-sm font-semibold tracking-[0.3em] uppercase text-muted-foreground"
-                  animate={{ opacity: [0.5, 1, 0.5] }}
-                  transition={{ duration: 2, repeat: Infinity }}
-                >
-                  Welcome, Shinobi
-                </motion.div>
                 <button
                   onClick={handleOpen}
                   className="btn-glow group relative inline-flex items-center gap-3 rounded-2xl px-8 py-5 text-xl sm:text-2xl font-extrabold text-primary-foreground bg-primary"
@@ -188,9 +181,6 @@ export default function KonohaGateIntro() {
                     ⛩️
                   </span>
                 </button>
-                <p className="mt-3 text-xs text-muted-foreground">
-                  Click to open the gates
-                </p>
               </motion.div>
             )}
           </AnimatePresence>
