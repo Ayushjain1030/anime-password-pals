@@ -4,6 +4,7 @@ import FeaturesSection from "@/components/FeaturesSection";
 import InteractiveSection from "@/components/InteractiveSection";
 import TipsSection from "@/components/TipsSection";
 import StickyFooterCTA from "@/components/StickyFooterCTA";
+import KonohaGateIntro from "@/components/KonohaGateIntro";
 
 export const Route = createFileRoute("/")({
   component: Index,
@@ -20,6 +21,7 @@ export const Route = createFileRoute("/")({
 function Index() {
   return (
     <main className="min-h-screen pb-24">
+      <KonohaGateIntro />
       <HeroSection />
       <FeaturesSection />
       <InteractiveSection />
