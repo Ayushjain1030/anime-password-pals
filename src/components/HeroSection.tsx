@@ -15,12 +15,14 @@ export default function HeroSection() {
         transition={{ duration: 0.6, type: "spring", bounce: 0.4 }}
         className="mx-auto w-48 sm:w-56 md:w-64"
       >
-        <img
+        <motion.img
           src={heroGuardian}
           alt="Ninja Password Guardian"
           width={512}
           height={512}
           className="w-full h-auto drop-shadow-lg"
+          animate={{ y: [0, -12, 0] }}
+          transition={{ duration: 3.5, repeat: Infinity, ease: "easeInOut" }}
         />
       </motion.div>
 
