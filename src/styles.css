@@ -11,7 +11,6 @@
   --radius-xl: calc(var(--radius) + 4px);
   --radius-2xl: calc(var(--radius) + 8px);
   --radius-3xl: calc(var(--radius) + 12px);
-  --radius-4xl: calc(var(--radius) + 16px);
   --color-background: var(--background);
   --color-foreground: var(--foreground);
   --color-card: var(--card);
@@ -37,75 +36,61 @@
   --color-chart-3: var(--chart-3);
   --color-chart-4: var(--chart-4);
   --color-chart-5: var(--chart-5);
-  --color-sidebar: var(--sidebar);
-  --color-sidebar-foreground: var(--sidebar-foreground);
-  --color-sidebar-primary: var(--sidebar-primary);
-  --color-sidebar-primary-foreground: var(--sidebar-primary-foreground);
-  --color-sidebar-accent: var(--sidebar-accent);
-  --color-sidebar-accent-foreground: var(--sidebar-accent-foreground);
-  --color-sidebar-border: var(--sidebar-border);
-  --color-sidebar-ring: var(--sidebar-ring);
 
-  /* Anime theme custom colors */
-  --color-kawaii-pink: var(--kawaii-pink);
-  --color-kawaii-blue: var(--kawaii-blue);
-  --color-kawaii-yellow: var(--kawaii-yellow);
-  --color-kawaii-green: var(--kawaii-green);
-  --color-kawaii-purple: var(--kawaii-purple);
-  --color-kawaii-orange: var(--kawaii-orange);
-  --color-strength-weak: var(--strength-weak);
-  --color-strength-medium: var(--strength-medium);
-  --color-strength-strong: var(--strength-strong);
+  /* Verdict colors */
+  --color-safe: var(--safe);
+  --color-suspicious: var(--suspicious);
+  --color-malicious: var(--malicious);
+  --color-cyber-cyan: var(--cyber-cyan);
+  --color-cyber-violet: var(--cyber-violet);
 
-  --font-display: "Fredoka", "Nunito", sans-serif;
-  --font-body: "Nunito", sans-serif;
+  --font-display: "Space Grotesk", "Inter", sans-serif;
+  --font-body: "Inter", sans-serif;
+  --font-mono: "JetBrains Mono", ui-monospace, monospace;
 }
 
 :root {
-  --radius: 1rem;
-  --background: oklch(0.15 0.04 250);
-  --foreground: oklch(0.95 0.02 60);
-  --card: oklch(0.2 0.05 255);
-  --card-foreground: oklch(0.95 0.02 60);
-  --popover: oklch(0.2 0.05 255);
-  --popover-foreground: oklch(0.95 0.02 60);
-  --primary: oklch(0.75 0.2 55);
-  --primary-foreground: oklch(0.1 0.02 250);
-  --secondary: oklch(0.55 0.18 255);
-  --secondary-foreground: oklch(1 0 0);
-  --muted: oklch(0.25 0.04 255);
-  --muted-foreground: oklch(0.7 0.03 60);
-  --accent: oklch(0.8 0.18 55);
-  --accent-foreground: oklch(0.1 0.02 250);
-  --destructive: oklch(0.6 0.22 25);
-  --destructive-foreground: oklch(1 0 0);
-  --border: oklch(0.3 0.06 255);
-  --input: oklch(0.25 0.05 255);
-  --ring: oklch(0.75 0.2 55);
-  --chart-1: oklch(0.75 0.2 55);
-  --chart-2: oklch(0.55 0.18 255);
-  --chart-3: oklch(0.8 0.18 55);
-  --chart-4: oklch(0.65 0.18 25);
-  --chart-5: oklch(0.85 0.16 90);
-  --sidebar: oklch(0.15 0.04 250);
-  --sidebar-foreground: oklch(0.95 0.02 60);
-  --sidebar-primary: oklch(0.75 0.2 55);
-  --sidebar-primary-foreground: oklch(0.1 0.02 250);
-  --sidebar-accent: oklch(0.25 0.04 255);
-  --sidebar-accent-foreground: oklch(0.95 0.02 60);
-  --sidebar-border: oklch(0.3 0.06 255);
-  --sidebar-ring: oklch(0.75 0.2 55);
+  --radius: 0.625rem;
 
-  /* Naruto palette */
-  --kawaii-pink: oklch(0.65 0.25 25);
-  --kawaii-blue: oklch(0.5 0.2 255);
-  --kawaii-yellow: oklch(0.88 0.18 90);
-  --kawaii-green: oklch(0.7 0.18 150);
-  --kawaii-purple: oklch(0.45 0.2 290);
-  --kawaii-orange: oklch(0.75 0.2 55);
-  --strength-weak: oklch(0.6 0.22 25);
-  --strength-medium: oklch(0.8 0.18 80);
-  --strength-strong: oklch(0.7 0.22 150);
+  /* Deep cyber-noir background */
+  --background: oklch(0.13 0.03 260);
+  --foreground: oklch(0.96 0.01 240);
+  --card: oklch(0.18 0.04 265);
+  --card-foreground: oklch(0.96 0.01 240);
+  --popover: oklch(0.18 0.04 265);
+  --popover-foreground: oklch(0.96 0.01 240);
+
+  /* Electric cyan primary */
+  --primary: oklch(0.78 0.17 200);
+  --primary-foreground: oklch(0.13 0.03 260);
+
+  --secondary: oklch(0.25 0.05 270);
+  --secondary-foreground: oklch(0.96 0.01 240);
+
+  --muted: oklch(0.22 0.04 265);
+  --muted-foreground: oklch(0.7 0.03 250);
+
+  --accent: oklch(0.65 0.22 300);
+  --accent-foreground: oklch(0.98 0.01 240);
+
+  --destructive: oklch(0.62 0.24 20);
+  --destructive-foreground: oklch(0.98 0.01 240);
+
+  --border: oklch(0.28 0.05 265 / 0.5);
+  --input: oklch(0.22 0.05 265);
+  --ring: oklch(0.78 0.17 200);
+
+  --safe: oklch(0.72 0.18 155);
+  --suspicious: oklch(0.78 0.18 80);
+  --malicious: oklch(0.62 0.24 20);
+  --cyber-cyan: oklch(0.78 0.17 200);
+  --cyber-violet: oklch(0.65 0.22 300);
+
+  --chart-1: oklch(0.78 0.17 200);
+  --chart-2: oklch(0.65 0.22 300);
+  --chart-3: oklch(0.72 0.18 155);
+  --chart-4: oklch(0.78 0.18 80);
+  --chart-5: oklch(0.62 0.24 20);
 }
 
 @layer base {
@@ -113,85 +98,53 @@
     border-color: var(--color-border);
   }
 
-  body {
+  html, body {
     background-color: var(--color-background);
     color: var(--color-foreground);
     font-family: var(--font-body);
+    -webkit-font-smoothing: antialiased;
   }
 
   h1, h2, h3, h4, h5, h6 {
     font-family: var(--font-display);
+    letter-spacing: -0.02em;
   }
 }
 
-/* Glow button effect */
 @layer utilities {
-  .btn-glow {
-    box-shadow: 0 0 20px color-mix(in oklch, var(--primary) 40%, transparent),
-                0 4px 15px color-mix(in oklch, var(--primary) 25%, transparent);
-    transition: box-shadow 0.3s ease, transform 0.2s ease;
+  .glow-primary {
+    box-shadow: 0 0 30px color-mix(in oklch, var(--primary) 35%, transparent),
+                0 0 80px color-mix(in oklch, var(--primary) 15%, transparent);
   }
-  .btn-glow:hover {
-    box-shadow: 0 0 30px color-mix(in oklch, var(--primary) 60%, transparent),
-                0 6px 20px color-mix(in oklch, var(--primary) 35%, transparent);
-    transform: translateY(-2px);
-  }
-  .btn-glow:active {
-    transform: translateY(0);
+  .glow-accent {
+    box-shadow: 0 0 30px color-mix(in oklch, var(--accent) 35%, transparent);
   }
 
-  .btn-glow-accent {
-    box-shadow: 0 0 20px color-mix(in oklch, var(--accent) 40%, transparent),
-                0 4px 15px color-mix(in oklch, var(--accent) 25%, transparent);
-  }
-
-  .card-anime {
-    background: var(--card);
-    border-radius: var(--radius-2xl);
-    box-shadow: 0 4px 20px color-mix(in oklch, var(--kawaii-pink) 15%, transparent),
-                0 1px 4px color-mix(in oklch, var(--foreground) 5%, transparent);
-  }
-
-  .gradient-hero {
-    background: linear-gradient(
-      180deg,
-      oklch(0.12 0.06 270) 0%,
-      oklch(0.18 0.08 40) 40%,
-      oklch(0.15 0.05 250) 100%
-    );
-  }
-
-  .gradient-features {
-    background: linear-gradient(
-      180deg,
-      oklch(0.15 0.05 250) 0%,
-      oklch(0.13 0.07 30) 50%,
-      oklch(0.15 0.04 250) 100%
-    );
-  }
-
-  .gradient-interactive {
-    background: linear-gradient(
-      180deg,
-      oklch(0.15 0.04 250) 0%,
-      oklch(0.12 0.08 290) 50%,
-      oklch(0.15 0.05 250) 100%
-    );
-  }
-
-  .gradient-tips {
-    background: linear-gradient(
-      180deg,
-      oklch(0.15 0.05 250) 0%,
-      oklch(0.13 0.06 150) 50%,
-      oklch(0.18 0.07 25) 100%
-    );
-  }
-
-  .text-gradient-hero {
-    background: linear-gradient(135deg, oklch(0.85 0.2 55), oklch(0.65 0.22 25));
+  .text-gradient-cyber {
+    background: linear-gradient(135deg, var(--cyber-cyan), var(--cyber-violet));
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     background-clip: text;
   }
+
+  .grid-bg {
+    background-image:
+      linear-gradient(color-mix(in oklch, var(--cyber-cyan) 8%, transparent) 1px, transparent 1px),
+      linear-gradient(90deg, color-mix(in oklch, var(--cyber-cyan) 8%, transparent) 1px, transparent 1px);
+    background-size: 48px 48px;
+  }
+
+  .glass {
+    background: color-mix(in oklch, var(--card) 70%, transparent);
+    backdrop-filter: blur(16px);
+    -webkit-backdrop-filter: blur(16px);
+    border: 1px solid color-mix(in oklch, var(--cyber-cyan) 20%, transparent);
+  }
+
+  .verdict-safe { color: var(--safe); }
+  .verdict-suspicious { color: var(--suspicious); }
+  .verdict-malicious { color: var(--malicious); }
+  .bg-verdict-safe { background-color: color-mix(in oklch, var(--safe) 18%, transparent); }
+  .bg-verdict-suspicious { background-color: color-mix(in oklch, var(--suspicious) 18%, transparent); }
+  .bg-verdict-malicious { background-color: color-mix(in oklch, var(--malicious) 22%, transparent); }
 }
