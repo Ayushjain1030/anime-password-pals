@@ -49,10 +49,10 @@ export const runScan = createServerFn({ method: "POST" })
       hostname: r.hostname,
       verdict: r.verdict,
       risk_score: r.riskScore,
-      reasons: r.reasons,
+      reasons: r.reasons as unknown as Record<string, unknown>[],
       ssl_valid: r.sslValid,
-      ssl_details: r.sslDetails,
-      reputation: r.reputation,
+      ssl_details: r.sslDetails as unknown as Record<string, unknown>,
+      reputation: r.reputation as unknown as Record<string, unknown>,
     }));
 
     const { error: resErr } = await supabase.from("scan_results").insert(rows);
