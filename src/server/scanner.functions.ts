@@ -49,10 +49,13 @@ export const runScan = createServerFn({ method: "POST" })
       hostname: r.hostname,
       verdict: r.verdict,
       risk_score: r.riskScore,
-      reasons: r.reasons as unknown as Record<string, unknown>[],
+      // eslint-disable-next-line @typescript-eslint/no-explicit-any
+      reasons: r.reasons as any,
       ssl_valid: r.sslValid,
-      ssl_details: r.sslDetails as unknown as Record<string, unknown>,
-      reputation: r.reputation as unknown as Record<string, unknown>,
+      // eslint-disable-next-line @typescript-eslint/no-explicit-any
+      ssl_details: r.sslDetails as any,
+      // eslint-disable-next-line @typescript-eslint/no-explicit-any
+      reputation: r.reputation as any,
     }));
 
     const { error: resErr } = await supabase.from("scan_results").insert(rows);
